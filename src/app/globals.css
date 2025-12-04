@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: oklch(81% 0.117 11.638);
 }
 
 @layer components {
