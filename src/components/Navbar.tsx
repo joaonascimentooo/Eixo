@@ -58,7 +58,8 @@ export function Navbar() {
           </div>
 
           <div className="hidden lg:flex items-center gap-3">
-            <button 
+            <Link
+              href="/login"
               onMouseEnter={() => setHoveredButton('enter')}
               className="px-5 py-2.5 text-sm font-semibold rounded-lg transition-all"
               style={{
@@ -66,12 +67,14 @@ export function Navbar() {
                 background: hoveredButton === 'enter'
                   ? 'linear-gradient(135deg, oklch(70% 0.22 190), oklch(62% 0.24 190))'
                   : 'oklch(70% 0.22 190 / 0.15)',
-                boxShadow: hoveredButton === 'enter' ? '0 8px 24px oklch(70% 0.22 190 / 0.3)' : 'none'
+                boxShadow: hoveredButton === 'enter' ? '0 8px 24px oklch(70% 0.22 190 / 0.3)' : 'none',
+                display: 'inline-block'
               }}
             >
               Entrar
-            </button>
-            <button 
+            </Link>
+            <Link
+              href="/signup"
               onMouseEnter={() => setHoveredButton('start')}
               className="px-5 py-2.5 text-sm font-semibold rounded-lg transition-all"
               style={{
@@ -80,11 +83,12 @@ export function Navbar() {
                 boxShadow: hoveredButton === 'start' 
                   ? '0 12px 32px oklch(70% 0.22 190 / 0.4)'
                   : '0 8px 24px oklch(70% 0.22 190 / 0.3)',
-                opacity: hoveredButton === 'enter' ? 0.5 : 1
+                opacity: hoveredButton === 'enter' ? 0.5 : 1,
+                display: 'inline-block'
               }}
             >
               Começar Grátis
-            </button>
+            </Link>
           </div>
 
           <button
