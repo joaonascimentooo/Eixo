@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Minha Rotina - Site de Gerenciamento de Tarefas
 
-## Getting Started
+Um aplicativo web moderno para gerenciar sua rotina diária, desenvolvido com Next.js 16, TypeScript, React e Tailwind CSS.
 
-First, run the development server:
+## 🚀 Características
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- ✅ Adicionar, editar e remover tarefas
+- 📅 Navegação entre datas
+- ⏰ Definir horário e duração para cada tarefa
+- 🏷️ Categorizar tarefas (Trabalho, Pessoal, Saúde, Diversão, Estudo)
+- 📊 Visualizar progresso do dia
+- 🎨 Interface moderna e responsiva
+- 💾 Estado gerenciado com Zustand
+
+## 📦 Dependências Instaladas
+
+### Produção
+- `next` - Framework React server-side rendering
+- `react` - Biblioteca UI
+- `react-dom` - Renderização React no DOM
+- `zustand` - Gerenciamento de estado leve
+- `lucide-react` - Ícones modernos
+- `date-fns` - Manipulação de datas
+- `axios` - Cliente HTTP
+- `@radix-ui/*` - Componentes acessíveis
+
+### Desenvolvimento
+- `typescript` - Tipagem estática
+- `tailwindcss` - Framework CSS utilitário
+- `eslint` - Linter JavaScript
+- Utilitários e componentes UI
+
+## 🛠️ Estrutura do Projeto
+
+```
+src/
+├── app/
+│   ├── layout.tsx         # Layout raiz
+│   ├── page.tsx           # Página principal
+│   └── api/               # Rotas API (futuro)
+├── components/
+│   ├── TaskCard.tsx       # Componente de tarefa individual
+│   └── TaskList.tsx       # Lista de tarefas
+├── store/
+│   └── routineStore.ts    # Gerenciamento de estado com Zustand
+├── types/
+│   └── routine.ts         # Tipos TypeScript
+├── lib/
+│   └── utils.ts           # Funções utilitárias
+└── globals.css            # Estilos globais
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Como Começar
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Desenvolvimento
+```bash
+npm run dev
+```
+Abra [http://localhost:3000](http://localhost:3000) no navegador.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Build para Produção
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 📝 Como Usar
 
-To learn more about Next.js, take a look at the following resources:
+1. **Adicionar Tarefa**: Clique em "Nova Tarefa"
+2. **Preencher Formulário**:
+   - Título da tarefa (obrigatório)
+   - Descrição (opcional)
+   - Horário
+   - Duração em minutos
+   - Categoria
+3. **Navegar Datas**: Use os botões < e > ou clique "Hoje"
+4. **Marcar Concluída**: Clique no checkbox
+5. **Deletar**: Clique no ícone de lixeira
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔮 Próximas Funcionalidades
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [ ] Persistência com localStorage ou banco de dados
+- [ ] Sistema de autenticação
+- [ ] Sincronização em nuvem
+- [ ] Notificações de tarefas
+- [ ] Gráficos de produtividade
+- [ ] Modo escuro
+- [ ] Tarefas recorrentes
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Criado para melhorar sua produtividade**
