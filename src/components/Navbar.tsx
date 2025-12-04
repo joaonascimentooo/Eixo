@@ -38,7 +38,7 @@ export function Navbar() {
                 Eixo
               </span>
               <span className="text-xs font-bold opacity-90" style={{ color: 'oklch(95% 0.02 190)' }}>
-                Organize sua rotina
+                Parte de rotinas
               </span>
             </div>
           </Link>
